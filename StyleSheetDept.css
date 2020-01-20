@@ -1,0 +1,125 @@
+﻿@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import script('F:/NodeJS/Programs/Mini Project 2018-19/VolunDB/public/Sticky.js');
+
+body {
+    margin-top: 50px;
+    align-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #A7A1AE;
+    background-color: #1F2739;
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: 300;
+    line-height: 1em;
+    text-align: center;
+    color: #4DC3FA;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    color: #FB667A;
+    line-height: 1em;
+}
+
+.blue {
+    color: #185875;
+}
+
+.yellow {
+    color: #FFF842;
+}
+
+ul li {
+    list-style: none;
+}
+
+li {
+}
+
+.dropdown{
+	margin: 0 auto;
+	text-align: center;
+    width: 200px;
+}
+
+.dropdown #top{
+	color: $base;
+	position: relative;
+    height: 25px;
+}
+
+.dropdown-box{
+    height: 50px;
+}
+
+.dropdown li ul li{
+	color: $dark;
+	border-bottom: 1px solid darken($base, 5%);
+}
+
+.dropdown li ul li:first-child{
+margin-top: -13px;
+}
+
+.dropdown li .dropdown-box {
+    overflow: hidden;
+    display: none;
+    width: 100%;
+    margin-bottom: -15px;
+    margin-top: 13px;
+    padding: 0;
+    height: 50px;
+}
+
+.list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ffd800;
+    color: deepskyblue;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.dropdown li:hover .dropdown-box, .dropdown li:active .dropdown-box {
+    display: block;
+    background-color: none;
+    animation: box 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes box {
+  from {height: 0;}
+  to {height: 230px;}
+}
+
+
+
+.effect-6{
+    cursor: pointer;
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+}
+
+    .effect-6:hover{
+        background-color: yellow;
+        color: black;
+    }
+
+
+
+        .effect-6:hover:before{
+            -webkit-animation: spinAround 2s linear infinite;
+            -moz-animation: spinAround 2s linear infinite;
+            animation: spinAround 2s linear infinite;
+        }

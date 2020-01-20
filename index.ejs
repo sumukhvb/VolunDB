@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<div id="mySidenav" class="sidenav">
+    <script src="F:\NodeJS\Programs\Mini Project 2018-19\VolunDB\public\javascripts\Sidemenu.js"></script>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Events</a>
+    <a href="#">Stage</a>
+    <a href="#">Finance</a>
+    <a href="#">Campaigning</a>
+    <a href="#">Sports</a>
+    <a href="#">Hospitality</a>
+</div>
+<span onclick="openNav()">
+    <div class="hamb"></div>
+    <div class="hamb"></div>
+    <div class="hamb"></div>
+</span>
+<div id="main">
+    <head>
+        <link rel='stylesheet' href="index.css" type="text/css"></link>
+        <title>Volunteer Info - <%= title %></title>
+        <h1><span class="blue"></span>Volun<span class="blue"></span><span class="yellow">DB</span></h1>
+        <h2>Sort by: <%= catg %></h2>
+        <h2>Filter: <%= filt %></h2>
+    </head>
+    <body>
+        <table align="center" width="80%">
+            <tr>
+                <th>Sl.No</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Phone No</th>
+                <th>Dept</th>
+            </tr>
+            <% for (var i = 0; i < dat.length; i++) { %>
+            <tr>
+                <td><%= i+1 %></td>
+                <td><%= dat[i].Name %></td>
+                <td><%= dat[i].Type %></td>
+                <td><%= dat[i].PhoneNo %></td>
+                <td><%= dat[i].Dept %></td>
+            </tr>
+            <% } %>
+        </table>
+        <h2 class="footer">Press Ctrl+C and reload the app again to get another result</h2>
+        <ul>
+            <li onclick="printp()" align="center" class="printbutton">Print this table</li>
+        </ul>
+        <script>
+                function printp() {
+                    window.print();
+                }
+        </script>
+    </body>
+</div>
+</html>

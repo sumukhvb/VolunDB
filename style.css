@@ -1,0 +1,175 @@
+﻿@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+
+
+body {
+    align-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.42em;
+    color: #A7A1AE;
+    background-color: #1F2739;
+}
+
+span{
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamb {
+    cursor: pointer;
+    width: 35px;
+    height: 5px;
+    background-color: #FB667A;
+    margin: 6px 0;
+}
+
+
+h1 {
+    font-size: 4em;
+    font-weight: 300;
+    line-height: 1em;
+    text-align: center;
+    color: #4DC3FA;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    color: #FB667A;
+}
+
+    h2 a {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #FB667A;
+        text-decoration: none;
+    }
+
+.blue {
+    color: #185875;
+}
+
+.yellow {
+    color: #FFF842;
+}
+
+th, td{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ffd800;
+    font-weight: 500;
+}
+
+tr{
+    cursor: pointer;
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+}
+
+   tr:hover {
+        background-color: yellow;
+        color: black;
+    }
+
+
+
+        tr:hover:before {
+            -webkit-animation: spinAround 2s linear infinite;
+            -moz-animation: spinAround 2s linear infinite;
+            animation: spinAround 2s linear infinite;
+        }
+
+th{
+    background-color: yellow;
+    color: black;
+}
+
+.printbutton ul li{
+    align-self: center;
+}
+
+.printbutton {
+    list-style: none;
+    padding: 10px;
+    background-color: yellow;
+    width: 10%;
+    cursor: pointer;
+    color: black;
+    font-weight: 500;
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+}
+
+    .printbutton:hover {
+        background-color: #1F2739;
+        border: 1px solid #FB667A;
+        color: #FB667A;
+    }
+
+.footer{
+    font-size: larger;
+    line-height: 5em;
+    font-weight: 300
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #1F2739; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #4DC3FA;
+        display: block;
+        transition: 0.3s;
+    }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: black;
+            background-color: yellow;
+        }
+
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
